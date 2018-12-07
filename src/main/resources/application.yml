@@ -1,0 +1,22 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: enjoy
+  jackson:
+      time-zone: GMT+8
+      date-format: yyyy-MM-dd HH:mm:ss
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://172.16.117.61:3306/test?characterEncoding=utf-8
+    username: xwmysql
+    password: xwmysql
+    tomcat:
+      max-idle: 2
+      max-active: 10
+      max-wait: 10000
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:mybatis/mapper/*.xml
