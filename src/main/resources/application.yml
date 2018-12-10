@@ -15,6 +15,12 @@ spring:
       max-idle: 2
       max-active: 10
       max-wait: 10000
+  activemq:
+    broker-url: tcp://localhost:61616
+    user: admin
+    password: admin
+    pool:
+      enabled: true
 
 mybatis:
   configuration:
